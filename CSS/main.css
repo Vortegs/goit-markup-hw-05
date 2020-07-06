@@ -108,13 +108,14 @@ header>.container {
   color: var(--title-text-color);
 
   transform: scale(1.0);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .main-menu:hover,
 .main-menu:focus {
   transform: scale(1.1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .current-page:hover,
@@ -166,15 +167,17 @@ header>.container {
   line-height: 1.2;
   letter-spacing: 0.02rem;
   color: var(--primary-text-color);
+
   transform: scale(1.0);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+              color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 
 }
 
 .contacts-header:hover,
 .contacts-header:focus {
   transform: scale(1.1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -363,6 +366,9 @@ header>.container {
   fill: #afb1b8;
 
   transform: scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 
 }
 
@@ -370,9 +376,8 @@ header>.container {
 .but-social-net:focus {
 
   transform: scale(1.1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
+
 
   background-color: var(--accent-color);
   fill: #f5f4fa
@@ -415,6 +420,10 @@ header>.container {
   fill: #AFB1B8;
 
   transform: scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 
 }
 
@@ -428,9 +437,6 @@ header>.container {
 .client-logo-link:focus {
 
   transform: scale(1.1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   border-color: #2196F3;
   fill: #2196F3;
@@ -603,7 +609,7 @@ footer .but-social-net {
 .category-portfolio {
   margin: 0;
   padding-left: 24px;
-  margin-bottom: 0;
+  padding-bottom: 20px;
   font-size: 16px;
   line-height: 1.87;
   color: var(--primary-text-color);
